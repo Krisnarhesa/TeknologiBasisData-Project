@@ -10,14 +10,15 @@
 
     <title>@yield('title')</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -37,14 +38,14 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
 
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto" >
+                    <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -90,18 +91,18 @@
                 </a> --}}
             <ul class="navbar-nav d-flex flex-column">
                 <li class="nav-item">
-                    <a href="{{ url('/review') }} " class="nav-link text-dark pl-4 p-3">REVIEW</a>
+                    <a href="{{ url('/admin/review') }}" class="nav-link text-dark pl-4 p-3">REVIEW</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url('/pengiriman') }} " class="nav-link text-dark pl-4 p-3">PENGIRIMAN</a>
+                    <a href="{{ url('/admin/pengiriman') }}" class="nav-link text-dark pl-4 p-3">PENGIRIMAN</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url('/report') }} " class="nav-link text-dark pl-4 p-3">REPORT</a>
+                    <a href="{{ url('/admin/report') }}" class="nav-link text-dark pl-4 p-3">REPORT</a>
                 </li>
             </ul>
         </nav>
         <section class="p-4 my-container">
-            
+
             <section class="py-5 text-center container-fluid">
                 <div class="row py-5">
                     <div class="col-md-12">
@@ -121,6 +122,7 @@
     </div>
 </body>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.js') }}"></script>
 <script>
     var menu_btn = document.querySelector("#menu-btn")
     var sidebar = document.querySelector("#sidebar")

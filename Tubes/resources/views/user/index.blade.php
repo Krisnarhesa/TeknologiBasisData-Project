@@ -33,7 +33,6 @@
                                 <td>
                                     <a href="{{ url('/edit') }}/{{ $user->id }}"><button class="btn btn-success">Edit</button></a>
                                     <a href="{{ route('processDeleteUser',$user->id) }}"><button class="btn btn-warning">Delete</button></a>
-
                                 </td>
                             </tr>    
                         @endforeach
