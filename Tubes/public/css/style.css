@@ -14,7 +14,7 @@ body{
     height: 100vh;
     position: fixed;
     margin-left: -300px;
-    background-color: #ffc107;
+    background-color: #e0e4cc;
     transition: 0.4s;
 }
 

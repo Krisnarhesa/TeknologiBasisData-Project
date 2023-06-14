@@ -20,11 +20,11 @@ class UserController extends Controller
         $user->nama = $request->input('name');
         $user->email = $request->input('email');
         $user->password = $request->input('password');
-        $user->alamat = $request->input('alamat');
-        $user->notelp = $request->input('notelp');
+        // $user->alamat = $request->input('alamat');
+        // $user->notelp = $request->input('notelp');
         $user->save();
 
-        return redirect('/');
+        return redirect('/user');
     }
 
     public function edit($id){
@@ -38,17 +38,17 @@ class UserController extends Controller
         $user->nama = $request->input('name');
         $user->email = $request->input('email');
         $user->password = $request->input('password');
-        $user->alamat = $request->input('alamat');
-        $user->notelp = $request->input('notelp');
+        // $user->alamat = $request->input('alamat');
+        // $user->notelp = $request->input('notelp');
         $user->save();
 
-        return redirect('/');
+        return redirect('/user');
     }
 
     public function delete($id){
         $user = User::find($id);
         $user->delete();
 
-        return redirect('/');
+        return redirect('/user');
     }
 }

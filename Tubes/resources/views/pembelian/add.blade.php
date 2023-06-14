@@ -12,25 +12,25 @@
                 <h1 class="mb-3 text-center">Add Pembelian</h1>
 
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" placeholder="ID Customer" id="ID Customer"
-                        name="ID Customer" required>
+                    <input type="number" class="form-control" placeholder="IDCustomer" id="IDCustomer"
+                        name="IDCustomer" required>
                     <label for="floatingInput"> ID Customer</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" placeholder="total produk" id="total produk"
-                        name="total produk" required>
+                    <input type="number" class="form-control" placeholder="totalproduk" id="totalproduk"
+                        name="totalproduk" required>
                     <label for="floatingInput">Total Produk</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" placeholder="total pembelian" id="total pembelian"
-                        name="total pembelian" required>
+                    <input type="number" class="form-control" placeholder="totalpembelian" id="totalpembelian"
+                        name="totalpembelian" required>
                     <label for="floatingInput">Total Pembelian</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" placeholder="ID Admin" id="ID Admin" name="ID Admin"
+                    <input type="number" class="form-control" placeholder="IDAdmin" id="IDAdmin" name="IDAdmin"
                         required>
                     <label for="floatingInput">ID Admin</label>
                 </div>

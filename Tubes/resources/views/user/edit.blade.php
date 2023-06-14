@@ -28,7 +28,7 @@
                     <label for="floatingInput">Password</label>
                 </div>
 
-                <div class="form-floating mb-3">
+                <!-- <div class="form-floating mb-3">
                     <input type="text" class="form-control" placeholder="alamat" id="alamat" name="alamat" value="{{ $user->alamat }}"  required>
                     <label for="floatingInput">Alamat</label>
                 </div>
@@ -36,7 +36,7 @@
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" placeholder="notelp" id="notelp" name="notelp" value="{{ $user->notelp }}"  required>
                     <label for="floatingInput">No Telepon</label>
-                </div>
+                </div> -->
 
                 <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
             </form>

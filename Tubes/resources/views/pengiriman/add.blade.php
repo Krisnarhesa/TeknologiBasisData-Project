@@ -12,14 +12,14 @@
                 <h1 class="mb-3 text-center">Add Pengiriman</h1>
 
                 <div class="form-floating mb-3">
-                    <input type="date" class="form-control" placeholder="tanggal kirim" id="tanggal kirim"
-                        name="tanggal kirim" required>
+                    <input type="date" class="form-control" placeholder="tanggalkirim" id="tanggalkirim"
+                        name="tanggalkirim" required>
                     <label for="floatingInput">Tanggal Kirim</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="date" class="form-control" placeholder="tanggal sampai" id="tanggal sampai"
-                        name="tanggal sampai" required>
+                    <input type="date" class="form-control" placeholder="tanggalsampai" id="tanggalsampai"
+                        name="tanggalsampai" required>
                     <label for="floatingInput">Tanggal Sampai</label>
                 </div>
 
@@ -29,8 +29,8 @@
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" placeholder="ID Pembelian" id="ID Pembelian"
-                        name="ID Pembelian" required>
+                    <input type="number" class="form-control" placeholder="IDPembelian" id="IDPembelian"
+                        name="IDPembelian" required>
                     <label for="floatingInput">ID Pembelian</label>
                 </div>
 

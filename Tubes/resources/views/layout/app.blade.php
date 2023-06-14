@@ -24,7 +24,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background: #e0e4cc">
-            <button class="btn text-dark mx-1" id="menu-btn"><i class="fa fa-bars"></i></button>
+            <!-- <button class="btn text-dark mx-1" id="menu-btn"><i class="fa fa-bars"></i></button> -->
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <strong>Home</strong>
@@ -81,7 +81,7 @@
             </div>
         </nav>
 
-        {{-- SIDE BAR 2.0 START --}}
+        <!-- {{-- SIDE BAR 2.0 START --}}
         <nav class="sidebar navbar-expand d-flex flex-column align-item-start" id="sidebar">
             {{-- <a href="/" class="navbar-brand text light mt-5">
                     <div class="display-5 fw-bold text-center">HOME</div>
@@ -103,7 +103,7 @@
                     <a href="/review" class="nav-link text-dark pl-4 p-3">REVIEW</a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
         <section class="p-4 my-container">
             
             <section class="py-5 text-center container-fluid">

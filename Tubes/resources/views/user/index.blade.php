@@ -17,8 +17,8 @@
                             <th scope="col">Username</th>
                             <th scope="col">Email</th>
                             <th scope="col">Password</th>
-                            <th scope="col">Alamat</th>
-                            <th scope="col">No Telepon</th>
+                            <!-- <th scope="col">Alamat</th>
+                            <th scope="col">No Telepon</th> -->
                         </tr>
                     </thead>
                     <tbody>
@@ -28,8 +28,8 @@
                                 <td>{{ $user->name }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>{{ $user->password }}</td>
-                                <td>{{ $user->alamat }}</td>
-                                <td>{{ $user->notelp }}</td>
+                                <!-- <td>{{ $user->alamat }}</td>
+                                <td>{{ $user->notelp }}</td> -->
                                 <td>
                                     <a href="{{ url('/edit') }}/{{ $user->id }}"><button class="btn btn-success">Edit</button></a>
                                     <a href="{{ route('processDeleteUser',$user->id) }}"><button class="btn btn-warning">Delete</button></a>

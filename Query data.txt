@@ -1,0 +1,151 @@
+db.createCollection("review")
+db.review.insertMany([
+  
+db.createCollection("produk")
+db.produk.insertMany([
+    {
+        _id: 1,
+        name: "Dupa",
+        price: 20000
+    },
+    {
+        _id: 2,
+        name: "Kamen",
+        price: 500000
+    },
+    {
+        _id: 3,
+        name: "Udeng",
+        price: 100000
+    },
+    {
+        _id: 4,
+        name: "Selendang",
+        price: 150000
+    },
+    {
+        _id: 5,
+        name: "Kemeja Putih",
+        price: 100000
+    },
+    {
+        _id: 6,
+        name: "Permen",
+        price: 15000
+    },
+    {
+        _id: 7,
+        name: "Roko",
+        price: 10000
+    },
+    {
+        _id: 8,
+        name: "Sodan",
+        price: 15000
+    },
+    {
+        _id: 9,
+        name: "Pejati",
+        price: 70000
+    },
+    {
+        _id: 10,
+        name: "Segehan",
+        price: 15000
+    }
+]);
+
+db.createCollection("pembelian")
+
+db.createCollection("kategori")
+
+
+db.createCollection("metodePembayaran")
+
+db.createCollection("pengiriman")
+
+db.createCollection("pemesanan")
+
+db.createCollection("customers")
+db.customers.insertMany([
+  {
+    _id: 1,
+    nama: "John Doe",
+    email: "johndoe@example.com",
+    password: "password123",
+    alamat: "Jalan ABC No. 123",
+    notelp: "081234567890"
+  },
+  {
+    _id: 2,
+    nama: "Jane Smith",
+    email: "janesmith@example.com",
+    password: "qwerty123",
+    alamat: "Jalan XYZ No. 456",
+    notelp: "087654321098"
+  },
+  {
+    _id: 3,
+    nama: "Michael Johnson",
+    email: "michaeljohnson@example.com",
+    password: "pass456",
+    alamat: "Jalan DEF No. 789",
+    notelp: "081111111111"
+  },
+  {
+    _id: 4,
+    nama: "Emily Brown",
+    email: "emilybrown@example.com",
+    password: "p@ssw0rd",
+    alamat: "Jalan GHI No. 012",
+    notelp: "082222222222"
+  },
+  {
+    _id: 5,
+    nama: "David Wilson",
+    email: "davidwilson@example.com",
+    password: "abcd1234",
+    alamat: "Jalan JKL No. 345",
+    notelp: "083333333333"
+  },
+  {
+    _id: 6,
+    nama: "Emma Davis",
+    email: "emmadavis@example.com",
+    password: "qwertyui",
+    alamat: "Jalan MNO No. 678",
+    notelp: "084444444444"
+  },
+  {
+    _id: 7,
+    nama: "Alexander Martinez",
+    email: "alexmartinez@example.com",
+    password: "password123",
+    alamat: "Jalan PQR No. 901",
+    notelp: "085555555555"
+  },
+  {
+    _id: 8,
+    nama: "Olivia Taylor",
+    email: "oliviataylor@example.com",
+    password: "pass987",
+    alamat: "Jalan STU No. 234",
+    notelp: "086666666666"
+  },
+  {
+    _id: 9,
+    nama: "Daniel Anderson",
+    email: "danielanderson@example.com",
+    password: "qwerty123",
+    alamat: "Jalan VWX No. 567",
+    notelp: "087777777777"
+  },
+  {
+    _id: 10,
+    nama: "Sophia Thomas",
+    email: "sophiathomas@example.com",
+    password: "pass5678",
+    alamat: "Jalan YZA No. 890",
+    notelp: "088888888888"
+  }
+]);

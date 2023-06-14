@@ -11,41 +11,41 @@
 
                 <h1 class="mb-3 text-center">Edit Pembelian</h1>
 
-                <input type="hidden" id="id" name="id" value="{{ $user->id }}">
+                <input type="hidden" id="id" name="id" value="{{ $pembelian->id }}">
 
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" placeholder="ID Customer" id="ID Customer"
-                        name="ID Customer" value="{{ $user->ID Customer}}" required>
+                    <input type="number" class="form-control" placeholder="IDCustomer" id="IDCustomer"
+                        name="IDCustomer" value="{{ $pembelian->IDCustomer}}" required>
                     <label for="floatingInput">ID Customer</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" placeholder="total produk" id="total produk"
-                        name="total produk" value="{{ $user->total produk}}" required>
+                    <input type="number" class="form-control" placeholder="totalproduk" id="totalproduk"
+                        name="totalproduk" value="{{ $pembelian->totalproduk}}" required>
                     <label for="floatingInput">Total Produk</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" placeholder="total pembelian" id="total pembelian"
-                        name="total pembelian" value="{{ $user->total pembelian }}" required>
+                    <input type="number" class="form-control" placeholder="totalpembelian" id="totalpembelian"
+                        name="totalpembelian" value="{{ $pembelian->totalpembelian }}" required>
                     <label for="floatingInput">Total Pembelian</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" placeholder="ID Admin" id="ID Admin" name="ID Admin"
-                        value="{{ $user->ID Admin }}" required>
+                    <input type="number" class="form-control" placeholder="IDAdmin" id="IDAdmin" name="IDAdmin"
+                        value="{{ $pembelian->IDAdmin }}" required>
                     <label for="floatingInput">ID Admin</label>
                 </div>
 
                 <div class="form-floating mb-3">
                     <input type="date" class="form-control" placeholder="tanggal" id="tanggal" name="tanggal"
-                        value="{{ $user->tanggal }}" required>
+                        value="{{ $pembelian->tanggal }}" required>
                     <label for="floatingInput">Tanggal</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" placeholder="status" id="tstatus" name="status"
-                        value="{{ $user->status }}" required>
+                    <input type="text" class="form-control" placeholder="status" id="status" name="status"
+                        value="{{ $pembelian->status }}" required>
                     <label for="floatingInput">Status</label>
                 </div>
 

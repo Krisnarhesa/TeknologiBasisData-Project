@@ -1,6 +1,7 @@
 <?php
-
+use App\Http\Controllers\PengirimanController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\PembelianController;
 use App\Http\Controllers\FlowController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -33,35 +34,35 @@ Route::get('/delete/{id}',[UserController::class,'delete'])-> name('processDelet
 
 // produk
 Route::get('/produk', [App\Http\Controllers\ProdukController::class,'index']);
-Route::get('/add-produk', [App\Http\Controllers\ProdukController::class,'add']);
-Route::post('processAddProduk', [App\Http\Controllers\ProdukController::class,'processAdd'])->name('processAddProduk');
-Route::get('/edit-produk/{id}', [App\Http\Controllers\ProdukController::class,'edit']);
-Route::post('processEditProduk', [App\Http\Controllers\ProdukController::class,'processEdit'])->name('processEditProduk');
-Route::get('/delete-produk/{id}',[App\Http\Controllers\ProdukController::class,'delete'])->name('processDeleteProduk');
+Route::get('/add-produk', [App\Http\Controllers\ProdukController::class,'add'])-> middleware('is_admin');
+Route::post('processAddProduk', [App\Http\Controllers\ProdukController::class,'processAdd'])->name('processAddProduk')-> middleware('is_admin');
+Route::get('/edit-produk/{id}', [App\Http\Controllers\ProdukController::class,'edit'])-> middleware('is_admin');;
+Route::post('processEditProduk', [App\Http\Controllers\ProdukController::class,'processEdit'])->name('processEditProduk')-> middleware('is_admin');
+Route::get('/delete-produk/{id}',[App\Http\Controllers\ProdukController::class,'delete'])->name('processDeleteProduk')-> middleware('is_admin');
 
 // review
 Route::get('/review', [App\Http\Controllers\ReviewController::class,'index']);
-Route::get('/add-review', [App\Http\Controllers\ReviewController::class,'add']);
-Route::post('processAddReview', [App\Http\Controllers\ReviewController::class,'processAdd'])->name('processAddReview');
-Route::get('/edit-review/{id}', [App\Http\Controllers\ReviewController::class,'edit']);
-Route::post('processEditReview', [App\Http\Controllers\ReviewController::class,'processEdit'])->name('processEditReview');
-Route::get('/delete-review/{id}',[App\Http\Controllers\ReviewController::class,'delete'])->name('processDeleteReview');
+Route::get('/add-review', [App\Http\Controllers\ReviewController::class,'add'])-> middleware('is_admin');
+Route::post('processAddReview', [App\Http\Controllers\ReviewController::class,'processAdd'])->name('processAddReview')-> middleware('is_admin');
+Route::get('/edit-review/{id}', [App\Http\Controllers\ReviewController::class,'edit'])-> middleware('is_admin');
+Route::post('processEditReview', [App\Http\Controllers\ReviewController::class,'processEdit'])->name('processEditReview')-> middleware('is_admin');;
+Route::get('/delete-review/{id}',[App\Http\Controllers\ReviewController::class,'delete'])->name('processDeleteReview')-> middleware('is_admin');
 
-// //pembelian
-// Route::get('/pembelian', [PembelianController::class,'index']);
-// Route::get('/add', [PembelianController::class,'add']) -> middleware('is_admin');
-// Route::post('processAdd', [PembelianController::class,'processAdd']) ->name('processAddPembelian')-> middleware('is_admin');
-// Route::get('/edit/{id}', [PembelianController::class,'edit'])-> middleware('is_admin');
-// Route::post('processEdit', [PembelianController::class,'processEdit'])-> name('processEditPembelian')-> middleware('is_admin');
-// Route::get('/delete/{id}',[PembelianController::class,'delete'])->name('processDeletePembelian') -> middleware('is_admin');
+//pembelian
+Route::get('/pembelian', [App\Http\Controllers\PembelianController::class,'index']);
+Route::get('/add-pembelian', [App\Http\Controllers\PembelianController::class,'add']) -> middleware('is_admin');
+Route::post('processAddPembelian', [App\Http\Controllers\PembelianController::class,'processAdd']) ->name('processAddPembelian')-> middleware('is_admin');
+Route::get('/edit-pembelian/{id}', [App\Http\Controllers\PembelianController::class,'edit'])-> middleware('is_admin');
+Route::post('processEditPembelian', [App\Http\Controllers\PembelianController::class,'processEdit'])-> name('processEditPembelian')-> middleware('is_admin');
+Route::get('/delete-pembelian/{id}',[App\Http\Controllers\PembelianController::class,'delete'])->name('processDeletePembelian') -> middleware('is_admin');
 
 // //pengiriman
-// Route::get('/pengiriman', [PengirimanController::class,'index']);
-// Route::get('/add', [PengirimanController::class,'add']) -> middleware('is_admin');
-// Route::post('processAdd', [PengirimanController::class,'processAdd']) ->name('processAddPengiriman')-> middleware('is_admin');
-// Route::get('/edit/{id}', [PengirimanController::class,'edit'])-> middleware('is_admin');
-// Route::post('processEdit', [PengirimanController::class,'processEdit'])-> name('processEditPengiriman')-> middleware('is_admin');
-// Route::get('/delete/{id}',[PengirimanController::class,'delete'])->name('processDeletePengiriman') -> middleware('is_admin');
+Route::get('/pengiriman', [App\Http\Controllers\PengirimanController::class,'index']);
+Route::get('/add-pengiriman', [App\Http\Controllers\PengirimanController::class,'add']) -> middleware('is_admin');
+Route::post('processAddPengiriman', [App\Http\Controllers\PengirimanController::class,'processAdd']) ->name('processAddPengiriman')-> middleware('is_admin');
+Route::get('/edit-pengiriman/{id}', [App\Http\Controllers\PengirimanController::class,'edit'])-> middleware('is_admin');
+Route::post('processEditPengiriman', [App\Http\Controllers\PengirimanController::class,'processEdit'])-> name('processEditPengiriman')-> middleware('is_admin');
+Route::get('/delete-pengiriman/{id}',[App\Http\Controllers\PengirimanController::class,'delete'])->name('processDeletePengiriman') -> middleware('is_admin');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

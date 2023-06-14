@@ -7,7 +7,7 @@
     <div class="col">
         <div class="card shadow-sm p-4">
             <div class="col-md-12 mb-4">
-                <a href="{{ url('/add') }}"><button class="btn btn-primary text-end">Add</button></a>
+                <a href="{{ url('add-pembelian') }}"><button class="btn btn-primary text-end">Add</button></a>
             </div>
             <div class="col-md-12">
                 <table class="table table-responsive">
@@ -23,19 +23,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($users as $index => $user)
+                        @foreach($pembelians as $index => $pembelian)
                         <tr>
                             <td>{{ $index+1 }}</td>
-                            <td>{{ $user->ID Customer }}</td>
-                            <td>{{ $user->Total Produk }}</td>
-                            <td>{{ $user->Total Pembelian }}</td>
-                            <td>{{ $user->ID Admin }}</td>
-                            <td>{{ $user->Tanggal }}</td>
-                            <td>{{ $user->Status }}</td>
+                            <td>{{ $pembelian->IDCustomer }}</td>
+                            <td>{{ $pembelian->totalproduk }}</td>
+                            <td>{{ $pembelian->totalpembelian }}</td>
+                            <td>{{ $pembelian->IDAdmin }}</td>
+                            <td>{{ $pembelian->tanggal }}</td>
+                            <td>{{ $pembelian->status }}</td>
                             <td>
-                                <a href="{{ url('/edit') }}/{{ $user->id }}"><button
+                                <a href="{{ url('edit-pembelian') }}/{{ $pembelian->id }}"><button
                                         class="btn btn-success">Edit</button></a>
-                                <a href="{{ route('processDeleteUser',$user->id) }}"><button
+                                <a href="{{ route('processDeletePembelian',$pembelian->id) }}"><button
                                         class="btn btn-warning">Delete</button></a>
 
                             </td>
