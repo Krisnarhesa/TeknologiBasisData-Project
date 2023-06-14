@@ -88,10 +88,19 @@
                 </a> --}}
             <ul class="navbar-nav d-flex flex-column">
                 <li class="nav-item">
-                    <a href="/pemesanan" class="nav-link text-dark pl-4 p-3">PEMESANAN</a>
+                    <a href="/user" class="nav-link text-dark pl-4 p-3">USER</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pembelian" class="nav-link text-dark pl-4 p-3">PEMBELIAN</a>
                 </li>
                 <li class="nav-item">
                     <a href="/pengiriman" class="nav-link text-dark pl-4 p-3">PENGIRIMAN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/produk" class="nav-link text-dark pl-4 p-3">PRODUK</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/review" class="nav-link text-dark pl-4 p-3">REVIEW</a>
                 </li>
             </ul>
         </nav>
